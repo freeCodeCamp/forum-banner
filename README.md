@@ -1,5 +1,7 @@
-# Versatile Banner
+# forum-banner
 
-This banner will allow you to add a versatile banner to the top of your Discourse forum
+> A banner component for announcements on the freeCodeCamp forum: <https://www.freecodecamp.org/forum>.
 
-For more information, please see: https://meta.discourse.org/t/versatile-banner/109133
+## Credits
+
+This plugin is derived from [versatile banner](https://meta.discourse.org/t/versatile-banner/109133).
