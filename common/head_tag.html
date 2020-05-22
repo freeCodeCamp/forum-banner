@@ -1,4 +1,4 @@
-<script type="text/discourse-plugin"version="0.8.18">
+<script type="text/discourse-plugin" version="0.8.18">
 
 const h = require("virtual-dom").h;
 
@@ -40,7 +40,7 @@ api.decorateWidget('banner-box-widget:after', helper => {
 api.createWidget("banner-content-widget", {
   tagName: "div#banner-content_wrap",
   html(attrs) {
-    let columns = h('div', { innerHTML: settings.additional_content })
+    let columns = h('div', { innerHTML: settings.banner_content })
     return h('div.row', columns);
   }
 });
