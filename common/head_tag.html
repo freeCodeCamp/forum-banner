@@ -46,20 +46,3 @@ api.createWidget("banner-content-widget", {
 });
 
 </script>
-
-<script type="text/x-handlebars" data-template-name="/connectors/custom-banner/banner">
-  {{mount-widget widget="banner-box-widget"}}
-</script>
-
-<script type="text/x-handlebars" data-template-name="/connectors/above-main-container/banner-themes">
-  {{#if (theme-setting 'show_for_members')}}
-    {{#if currentUser}}
-      {{plugin-outlet name="custom-banner"}}
-    {{/if}}
-  {{/if}}
-  {{#if (theme-setting 'show_for_anon')}}
-    {{#unless currentUser}}
-      {{plugin-outlet name="custom-banner"}}
-    {{/unless}}
-  {{/if}}
-</script>
