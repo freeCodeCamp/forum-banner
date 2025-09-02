@@ -32,25 +32,23 @@ banner_content:
   type: string
   textarea: true
   default: |
-    <div class="announcement">
-      <h2 class="announcement-heading">
-        Upcoming planned maintenance
-      </h2>
-      <div class="announcement-description">
-        <p>
-          We will be doing some planned maintenance on <strong>the forum</strong> today from <a
-            href="https://www.google.com/search?q=12%3A00+PM+UTC" rel="noreferrer noopener" target="_blank">12:00 pm -
-            Coordinated Universal Time (UTC)</a> for about <strong>30 minutes</strong>. All other parts of freeCodeCamp.org
-          will be not be affected and remain available.
-        </p>
-        <p>
-          While you wait, <a href="https://www.youtube.com/freecodecamp" rel="noreferrer noopener" target="_blank">try one
-            of our free courses on Python, SQL, JavaScript and Linux</a>. You should also
-          <a href="https://twitter.com/freecodecamp" rel="noreferrer noopener" target="_blank">follow us on
-            twitter</a> for updates.
-        </p>
-        <p>
-          Thanks for your patience while we make freeCodeCamp.org faster for you.
-        </p>
-      </div>
+    <h2 class="announcement-heading">
+      Upcoming planned maintenance
+    </h2>
+    <div class="announcement-description">
+      <p>
+        We will be doing some planned maintenance on <strong>the forum</strong> today from <a
+          href="https://www.google.com/search?q=12%3A00+PM+UTC" rel="noreferrer noopener" target="_blank">12:00 pm -
+          Coordinated Universal Time (UTC)</a> for about <strong>30 minutes</strong>. All other parts of freeCodeCamp.org
+        will be not be affected and remain available.
+      </p>
+      <p>
+        While you wait, <a href="https://www.youtube.com/freecodecamp" rel="noreferrer noopener" target="_blank">try one
+          of our free courses on Python, SQL, JavaScript and Linux</a>. You should also
+        <a href="https://twitter.com/freecodecamp" rel="noreferrer noopener" target="_blank">follow us on
+          twitter</a> for updates.
+      </p>
+      <p>
+        Thanks for your patience while we make freeCodeCamp.org faster for you.
+      </p>
     </div>
