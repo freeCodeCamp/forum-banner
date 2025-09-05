@@ -28,6 +28,30 @@ url_must_contain:
   default: /c/|/t/|/
   description:
     en: 'If any of the above sets of characters appear in the URL, the banner will display'
+plugin_outlet:
+  type: enum
+  default: "above-main-container"
+  choices:
+    - "below-site-header"
+    - "above-main-container"
+  refresh: true
+  description:
+    en: 'Choose where to display the banner on the page'
+background_color:
+  type: string
+  default: "#f1be32"
+  description:
+    en: 'Background color for the banner'
+primary_text_color:
+  type: string
+  default: "#0a0a23"
+  description:
+    en: 'Primary text color for the banner'
+link_text_color:
+  type: string
+  default: "#002ead"
+  description:
+    en: 'Link text color for the banner (accessibility compliant)'
 banner_content:
   type: string
   textarea: true
