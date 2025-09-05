@@ -45,6 +45,11 @@ export default class ForumBanner extends Component {
     {{#if this.shouldShow}}
       <div class="banner-box">
         <div class="container">
+          {{#if settings.banner_title}}
+            <div class="banner-title">
+              <h2>{{settings.banner_title}}</h2>
+            </div>
+          {{/if}}
           <div id="banner-content_wrap">
             <div class="row">
               {{htmlSafe settings.banner_content}}

@@ -25,14 +25,57 @@
   }
 
   #banner-content_wrap {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0;
+    padding: 0 2em 2em 2em;
+
     .row {
       display: flex;
       justify-content: center;
+    }
+
+    p {
+      margin: 0.5em 0;
+      text-align: center;
+    }
+
+    a {
+      color: $link_text_color;
+      font-weight: bold;
+      text-decoration: underline;
+      padding: 0 4px;
+
+      &:hover {
+        color: #d0d0d5;
+        background-color: $primary_text_color;
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
   }
 
   a {
     color: $link_text_color;
+  }
+
+  .banner-title {
+    text-align: center;
+    margin-bottom: 1em;
+
+    h2 {
+      color: $primary_text_color;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0;
+      padding: 0.5em 1em;
+    }
   }
 }
 
