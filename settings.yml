@@ -2,55 +2,77 @@ show_for_members:
   type: bool
   default: true
   description:
-    en: 'Display the banner for users logged into the forum'
+    en: "Display the banner for users logged into the forum"
 show_for_anon:
   type: bool
   default: true
   description:
-    en: 'Display the banner for anonymous users'
+    en: "Display the banner for anonymous users"
 display_on_mobile:
   type: bool
   default: true
   description:
-    en: 'Display the banner on mobile devices'
+    en: "Display the banner on mobile devices"
 display_on_desktop:
   type: bool
   default: true
   description:
-    en: 'Display the banner on desktop computers'
+    en: "Display the banner on desktop computers"
 display_on_homepage:
   type: bool
   default: true
   description:
-    en: 'Display the banner on the homepage'
+    en: "Display the banner on the homepage"
 url_must_contain:
   type: list
   default: /c/|/t/|/
   description:
-    en: 'If any of the above sets of characters appear in the URL, the banner will display'
+    en: "If any of the above sets of characters appear in the URL, the banner will display"
+plugin_outlet:
+  type: enum
+  default: "above-main-container"
+  choices:
+    - "below-site-header"
+    - "above-main-container"
+  refresh: true
+  description:
+    en: "Choose where to display the banner on the page"
+background_color:
+  type: string
+  default: "#f1be32"
+  description:
+    en: "Background color for the banner"
+primary_text_color:
+  type: string
+  default: "#0a0a23"
+  description:
+    en: "Primary text color for the banner"
+link_text_color:
+  type: string
+  default: "#002ead"
+  description:
+    en: "Link text color for the banner (accessibility compliant)"
+banner_title:
+  type: string
+  default: "Upcoming Planned Maintenance"
+  description:
+    en: "Title text for the banner (leave empty for no title)"
 banner_content:
   type: string
   textarea: true
   default: |
-    <div class="announcement">
-      <h2 class="announcement-heading">
-        Upcoming planned maintenance
-      </h2>
-      <div class="announcement-description">
-        <p>
-          We will be doing some planned maintenance on <strong>the forum</strong> today from <a
-            href="https://www.google.com/search?q=12%3A00+PM+UTC" rel="noreferrer noopener" target="_blank">12:00 pm -
-            Coordinated Universal Time (UTC)</a> for about <strong>30 minutes</strong>. All other parts of freeCodeCamp.org
-          will be not be affected and remain available.
-        </p>
-        <p>
-          While you wait, <a href="https://www.youtube.com/freecodecamp" rel="noreferrer noopener" target="_blank">try one
-            of our free courses on Python, SQL, JavaScript and Linux</a>. You should also
-          <a href="https://twitter.com/freecodecamp" rel="noreferrer noopener" target="_blank">follow us on
-            twitter</a> for updates.
-        </p>
-        <p>
-          Thanks for your patience while we make freeCodeCamp.org faster for you.
-        </p>
-      </div>
-    </div>
+    <p>
+      We will be doing some planned maintenance on <strong>the learn platform</strong> today from <a
+        href="https://www.google.com/search?q=12%3A00+PM+UTC" rel="noreferrer noopener" target="_blank">12:00 pm -
+        Coordinated Universal Time (UTC)</a> for about <strong>30 minutes</strong>. All other parts of freeCodeCamp.org
+      will be not be affected and remain available.
+    </p>
+    <p>
+      While you wait, <a href="https://www.youtube.com/freecodecamp" rel="noreferrer noopener" target="_blank">try one
+        of our free courses on Python, SQL, JavaScript and Linux</a>. You should also
+      <a href="https://twitter.com/freecodecamp" rel="noreferrer noopener" target="_blank">follow us on
+        twitter</a> for updates.
+    </p>
+    <p>
+      Thanks for your patience while we make freeCodeCamp.org faster for you.
+    </p>

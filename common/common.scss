@@ -1,7 +1,82 @@
+@if $display_on_desktop == "false" {
+  .desktop-view .banner-box {
+    display: none !important;
+  }
+}
+
+@if $display_on_mobile == "false" {
+  .mobile-view .banner-box {
+    display: none !important;
+  }
+}
+
+.banner-box {
+  width: 100%;
+  max-width: calc(100% - 16px);
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: $background_color;
+  color: $primary_text_color;
+
+  .container {
+    width: 100%;
+    max-width: $large-width;
+    margin: 0 auto;
+  }
+
+  #banner-content_wrap {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    line-height: 1.4;
+    padding: 0 4em 1em 4em;
+
+    .row {
+      width: 100%;
+    }
+
+    p {
+      margin: 0.5em 0;
+      text-align: left;
+    }
+
+    a {
+      color: $link_text_color;
+      font-weight: bold;
+      text-decoration: underline;
+      padding: 0 4px;
+
+      &:hover {
+        color: #d0d0d5;
+        background-color: $primary_text_color;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  a {
+    color: $link_text_color;
+  }
+
+  .banner-title {
+    text-align: center;
+    margin: 1em;
+
+    h2 {
+      color: $primary_text_color;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
 .announcement {
-  background-color: #ffdd7f;
+  background-color: $background_color;
   font-family: 'Roboto Mono', monospace;
-  color: #0a0a23;
+  color: $primary_text_color;
   font-size: 1em;
   line-height: 1.4;
   display: flex;
@@ -13,7 +88,7 @@
 }
 
 .announcement a {
-  color: #0a0a23;
+  color: $link_text_color;
   font-weight: bold;
   text-decoration: underline;
   padding: 0 4px;
@@ -21,7 +96,7 @@
 
 .announcement a:hover {
   color: #d0d0d5;
-  background-color: #0a0a23;
+  background-color: $primary_text_color;
   text-decoration: none;
   cursor: pointer;
 }
